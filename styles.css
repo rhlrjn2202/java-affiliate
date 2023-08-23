@@ -1,0 +1,94 @@
+/* Add this CSS code to your styles.css */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    max-width: 100%; /* Stretch the header to full width */
+    width: 100%; /* Stretch the header to full width */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A; /* Fallback background color */
+    background-image: linear-gradient(109.6deg, rgba(103,30,117,1) 11.2%, rgba(252,76,2,1) 91.1%); /* Gradient background */
+    color: white; /* Text color for better contrast */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.container {
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent overflow content from showing scrollbar */
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-between;
+}
+
+.product-box {
+    width: calc(25% - 10px);
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s, transform 0.3s; /* Add smooth transitions */
+}
+
+.product-box:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 3D projection on hover */
+    transform: translateY(-5px); /* Lift the box slightly on hover */
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 767px) {
+    .product-box {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Same background color as the navigation bar */
+    color: white; /* Text color for better contrast */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer credit styles */
+.footer-credit {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    margin-top: 10px; /* Add some space between footer notice and footer credit */
+}
+
+/* Additional styles for affiliate disclosure and footer notice */
+.affiliate-disclosure {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #777;
+}
+
