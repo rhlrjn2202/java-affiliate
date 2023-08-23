@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const products = [
         { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
-        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'www.rahulji.cc' },
-        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
         // Add more products here
     ];
 
@@ -56,4 +55,25 @@ document.addEventListener('DOMContentLoaded', function () {
             // window.location.href = 'access-denied-page.html';
         }
     }, 1000);
+
+    // Upload page specific code
+    const productForm = document.getElementById('productForm');
+    const imageInput = document.getElementById('imageInput');
+    const urlInput = document.getElementById('urlInput');
+
+    productForm.addEventListener('submit', async function (event) {
+        // Your upload page script code
+        event.preventDefault();
+
+        const imgSrc = imageInput.value;
+        const affiliateLink = urlInput.value;
+
+        if (imgSrc && affiliateLink) {
+            const product = { imgSrc, affiliateLink };
+            addProductBox(product); // Call the addProductBox function to dynamically add the new product box
+        }
+
+        // Clear form inputs
+        productForm.reset();
+    });
 });
