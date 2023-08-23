@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const products = [
-        { imgSrc: 'assets/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
-        { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'img.jpg', affiliateLink: 'www.rahulji.cc' },
-        { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
-        { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'www.rahulji.cc' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
+        { imgSrc: 'assets/products/img.jpg', affiliateLink: 'your-affiliate-link-2' },
         
         // Add more products here
     ];
