@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const products = [
-        { imgSrc: 'img.jpg', affiliateLink: 'https://www.rahulji.cc' },
+        { imgSrc: 'assets/img.jpg', affiliateLink: 'https://www.rahulji.cc' },
         { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
         { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
         { imgSrc: 'img.jpg', affiliateLink: 'your-affiliate-link-2' },
