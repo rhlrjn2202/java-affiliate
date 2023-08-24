@@ -11,11 +11,11 @@ header {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1A1A1A; /* Fallback background color */
-    background-image: linear-gradient(109.6deg, rgba(103,30,117,1) 11.2%, rgba(252,76,2,1) 91.1%); /* Gradient background */
+    background-color: #f2f2f2; /* Updated background color */
     color: white; /* Text color for better contrast */
     overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
+
 
 .container {
     padding: 10px;
