@@ -36,15 +36,15 @@ body {
     padding: 20px;
 }
 
-/* Product grid styles */
+/* Product grid styles - Increased gap between product boxes */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1px;
+    gap: 10px; /* Increase the gap value */
     justify-content: space-between;
 }
 
-/* Product box styles */
+/* Product box styles with rounded corners applied to top and bottom */
 .product-box {
     width: calc(25% - 10px);
     text-align: center;
@@ -57,9 +57,10 @@ body {
     position: relative; /* Add relative positioning for absolute positioning of product name */
     min-height: 0; /* Reset minimum height */
     flex-grow: 1; /* Allow product boxes to grow and maintain equal width */
+    border-radius: 7px 7px 0 0; /* Rounded corners (top-left, top-right) */
 }
 
-/* Product name styles - Display always with specified styles */
+/* Product name styles - Display always with specified styles and rounded corners */
 .product-name {
     background-color: #000; /* Black background color */
     color: #FFF; /* White font color */
@@ -72,7 +73,8 @@ body {
     font-size: 20px; /* Font size */
     font-weight: 700; /* Font weight */
     line-height: 25px; /* Line height */
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif; /* Specify the font family */
+    border-radius: 0 0 7px 7px; /* Rounded corners (bottom-left, bottom-right) */
 }
 
 /* Add back the 3D effect and box shadow on hover */
@@ -88,12 +90,26 @@ body {
     height: auto;
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width: 767px) {
-    .product-box {
-        width: 100%;
-        padding: 10px;
-    }
+/* More about GiftGenius section styles */
+.more-about {
+    background-color: #f2f2f2; /* Match the background color of the body */
+    color: #000; /* Black font color */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add spacing from the footer */
+}
+
+.more-about h2 {
+    font-size: 18px; /* Updated font size for the heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    font-weight: 700; /* Font weight for the heading */
+    line-height: 30px; /* Updated line height for the heading */
+}
+
+.more-about p {
+    color: rgba(0, 0, 0, 0.74); /* Text color */
+    font-size: 14px; /* Font size */
+    line-height: 20px; /* Line height */
 }
 
 /* Footer styles */
@@ -119,3 +135,44 @@ footer {
     margin-bottom: 10px;
     color: #777;
 }
+
+/* Styles for the old footer */
+/* Add your styles for the old footer here */
+
+
+
+/* More about GiftGenius section styles */
+.more-about {
+    background-color: #f2f2f2; /* Match the background color of the body */
+    color: #000; /* Black font color */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add spacing from the footer */
+}
+
+
+.more-about h2 {
+    font-size: 18px; /* Updated font size for the heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    font-weight: 700; /* Font weight for the heading */
+    line-height: 30px; /* Updated line height for the heading */
+}
+
+.more-about p {
+    color: rgba(0, 0, 0, 0.74); /* Text color */
+    font-size: 17px; /* Font size */
+    font-family: Roboto,sans-serif;
+    line-height: 20px; /* Line height */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Media Query for Mobile - Show only one product box at a time */
+@media screen and (max-width: 767px) {
+    .product-box {
+        width: 100%; /* Show one product box at a time */
+        padding: 10px;
+    }
+}
+
+
