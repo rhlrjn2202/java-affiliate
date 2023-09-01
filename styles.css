@@ -57,7 +57,7 @@ body {
     position: relative; /* Add relative positioning for absolute positioning of product name */
     min-height: 0; /* Reset minimum height */
     flex-grow: 1; /* Allow product boxes to grow and maintain equal width */
-    border-radius: 7px 7px 0 0; /* Rounded corners (top-left, top-right) */
+    border-radius: 7px 7px 7px 7px; /* Rounded corners (top-left, top-right) */
 }
 
 /* Product name styles - Display always with specified styles and rounded corners */
@@ -90,27 +90,7 @@ body {
     height: auto;
 }
 
-/* More about GiftGenius section styles */
-.more-about {
-    background-color: #f2f2f2; /* Match the background color of the body */
-    color: #000; /* Black font color */
-    padding: 20px; /* Adjust padding as needed */
-    text-align: center; /* Center-align the text */
-    margin-top: 20px; /* Add spacing from the footer */
-}
 
-.more-about h2 {
-    font-size: 18px; /* Updated font size for the heading */
-    margin-bottom: 10px; /* Add spacing below the heading */
-    font-weight: 700; /* Font weight for the heading */
-    line-height: 30px; /* Updated line height for the heading */
-}
-
-.more-about p {
-    color: rgba(0, 0, 0, 0.74); /* Text color */
-    font-size: 14px; /* Font size */
-    line-height: 20px; /* Line height */
-}
 
 /* Footer styles */
 footer {
@@ -135,10 +115,6 @@ footer {
     margin-bottom: 10px;
     color: #777;
 }
-
-/* Styles for the old footer */
-/* Add your styles for the old footer here */
-
 
 
 /* More about GiftGenius section styles */
