@@ -1,5 +1,6 @@
-/* Add this CSS code to your styles.css */
+/* CSS for index.html */
 
+/* Header styles */
 header {
     background-color: #333;
     color: white;
@@ -8,6 +9,7 @@ header {
     width: 100%; /* Stretch the header to full width */
 }
 
+/* Body styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,7 +18,7 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
-
+/* Container styles */
 .container {
     padding: 10px;
     max-width: 1200px;
@@ -24,14 +26,17 @@ body {
     overflow: hidden; /* Prevent overflow content from showing scrollbar */
 }
 
+/* Logo styles */
 .logo {
     font-size: 24px;
 }
 
+/* Main styles */
 .main {
     padding: 20px;
 }
 
+/* Product grid styles */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +44,7 @@ body {
     justify-content: space-between;
 }
 
+/* Product box styles */
 .product-box {
     width: calc(25% - 10px);
     text-align: center;
@@ -48,15 +54,37 @@ body {
     margin-bottom: 15px;
     box-sizing: border-box;
     transition: box-shadow 0.3s, transform 0.3s; /* Add smooth transitions */
+    position: relative; /* Add relative positioning for absolute positioning of product name */
+    min-height: 0; /* Reset minimum height */
+    flex-grow: 1; /* Allow product boxes to grow and maintain equal width */
 }
 
+/* Product name styles - Display always with specified styles */
+.product-name {
+    background-color: #000; /* Black background color */
+    color: #FFF; /* White font color */
+    padding: 5px 0; /* Adjust padding as needed */
+    position: absolute; /* Position the product name absolutely */
+    bottom: 0; /* Place it at the bottom of the product box */
+    left: 0; /* Align it with the left edge of the product box */
+    width: 100%; /* Make it stretch the full width of the product box */
+    box-sizing: border-box; /* Include padding and border within the width */
+    font-size: 20px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 25px; /* Line height */
+    font-family: Montserrat, sans-serif;
+}
+
+/* Add back the 3D effect and box shadow on hover */
 .product-box:hover {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 3D projection on hover */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* 3D projection on hover */
     transform: translateY(-5px); /* Lift the box slightly on hover */
 }
 
+/* Image styles */
 .product-box img {
     max-width: 100%;
+    max-height: 100%; /* Restrict maximum height of images */
     height: auto;
 }
 
@@ -91,4 +119,3 @@ footer {
     margin-bottom: 10px;
     color: #777;
 }
-
