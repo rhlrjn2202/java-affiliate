@@ -151,4 +151,19 @@ footer {
     }
 }
 
+/* Footer link styles */
+.footer-links {
+    color: #0098ff; /* Link color */
+    text-align: left;
+    font-family: Montserrat, sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: 700; /* Font weight */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-links:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
 
